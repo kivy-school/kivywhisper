@@ -4,7 +4,6 @@ from kivy.uix.boxlayout import BoxLayout
 from kivy.uix.dropdown import DropDown
 from kivy.uix.button import Button
 import psutil
-from kivy.uix.filechooser import FileChooser
 kv_string = '''
 #:import psutil psutil
 BoxLayout:
@@ -12,13 +11,8 @@ BoxLayout:
     BoxLayout: 
         orientation: 'horizontal'
         size_hint: (1,0.2)
-        Label:
-            id: selectedtextID
-            text: "selected file: "
-            multiline: True
-            do_wrap: True
-            valign: 'center'
-            text_size: self.size
+        Button:
+            text: "hw!"
         Button:
             text: "hw2!"
         Button:
@@ -36,11 +30,7 @@ BoxLayout:
             print(self.values)
     FileChooser:
         id: fc
-        on_selection: 
-            # root.ids['selectedtextID'].text = str(self.selection)
-            root.ids['selectedtextID'].text = "selected file: " + self.selection[0] if len(self.selection) > 0 else "selected file: "
         FileChooserIconLayout
-
 '''
 
 class whApp(App):
