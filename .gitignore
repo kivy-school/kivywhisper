@@ -1,0 +1,7 @@
+.DS_Store
+ignorethis
+.cache
+.venv
+poetry.lock
+build
+dist

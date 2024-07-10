@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "kivywhisper"
+version = "0.1.0"
+description = "Kivy + Whisper AI"
+authors = ["AccelQuasarDragon <138998466+AccelQuasarDragon@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "3.10.9"
+Kivy = "^2.3.0"
+#https://github.com/openai/whisper/discussions/683#discussioncomment-9303113
+openai-whisper = { git = "https://github.com/openai/whisper.git", rev = "v20231117" }
+#manually add numpy
+numpy = "<2.0.0"
+psutil = "^6.0.0"
+pyinstaller = "^6.9.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
