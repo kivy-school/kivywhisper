@@ -69,17 +69,14 @@ class CustomBoxLayout(BoxLayout):
     def run_whisper(self, *args):
         try: 
             filename = self.ids['selectedtextID'].text.replace('selected file: ', '')
-            transcript_name = pathlib.Path(self.ids['selectedtextID']).parent / self.ids['textinputID'].text + ".txt"
-            print("????",transcript_name)
-                # os.path.join(
-                #     os.path.split(self.ids['selectedtextID'].text)[0],
-                #     self.ids['textinputID'].text,
-                #     ".txt")
-            # model = whisper.load_model("medium")
-            # result = model.transcribe(filename, fp16=False)
-            # f = open(transcript_name, "w") 
-            # with f as f:
-            #     f.write(result["text"])
+            transcript_name = self.ids['textinputID'].text + ".txt"
+            transcript_location = pathlib.Path(filename).parent / transcript_name
+            # print("?", transcript_location)
+            model = whisper.load_model("medium")
+            result = model.transcribe(filename, fp16=False)
+            f = open(transcript_location, "w") 
+            with f as f:
+                f.write(result["text"])
         except Exception as e:
             import traceback
             print("error is "+ str(e))
