@@ -27,15 +27,7 @@ BoxLayout:
             padding_y: [self.height / 2.0 - (self.line_height / 2.0) * len(self._lines), 0]
             text: ""
         Button:
-            text: "Transcribe!"
-            on_release:
-                # # print("try whisperai!") if len(root.ids['fc'].selection) > 0 else
-                # # #show a popup: nothing selected
-                # popup = Popup(title='Test popup',
-                # content=Label(text='Hello world'),
-                # size_hint=(None, None), size=(400, 400))
-                # popup.open()
-
+            text: "hw3!"
     Spinner:
         size_hint: 1, 0.1
         pos_hint: {'center': (.5, .5)}
