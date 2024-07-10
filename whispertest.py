@@ -1,6 +1,7 @@
 import whisper
 
-model = whisper.load_model("base")
+# model = whisper.load_model("base")
+model = whisper.load_model("medium")
 result = model.transcribe("kivy clock A v2 x265.mp4", fp16=False)
 print(result["text"])
 

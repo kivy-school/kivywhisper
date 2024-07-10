@@ -7,6 +7,9 @@ import psutil
 from kivy.uix.filechooser import FileChooser
 from kivy.uix.popup import Popup
 from kivy.uix.label import Label
+import whisper
+import pathlib
+
 kv_string = '''
 #:import psutil psutil
 #:import pathlib pathlib
@@ -31,7 +34,7 @@ kv_string = '''
         Button:
             text: "Transcribe!"
             on_release:
-                root.popup_open()
+                root.transcribe()
     Spinner:
         size_hint: 1, 0.1
         pos_hint: {'center': (.5, .5)}
@@ -56,9 +59,34 @@ CustomBoxLayout:
 '''
 
 class CustomBoxLayout(BoxLayout):
+    def transcribe(self, *args):
+        #make sure there is a selection in the filechooser
+        if len(self.ids['fc'].selection) > 0:
+            self.run_whisper()
+        else:
+            self.popup_open()
+
+    def run_whisper(self, *args):
+        try: 
+            filename = self.ids['selectedtextID'].text.replace('selected file: ', '')
+            transcript_name = pathlib.Path(self.ids['selectedtextID']).parent / self.ids['textinputID'].text + ".txt"
+            print("????",transcript_name)
+                # os.path.join(
+                #     os.path.split(self.ids['selectedtextID'].text)[0],
+                #     self.ids['textinputID'].text,
+                #     ".txt")
+            # model = whisper.load_model("medium")
+            # result = model.transcribe(filename, fp16=False)
+            # f = open(transcript_name, "w") 
+            # with f as f:
+            #     f.write(result["text"])
+        except Exception as e:
+            import traceback
+            print("error is "+ str(e))
+            print(str(traceback.format_exc()))
+            self.popup_open()
+
     def popup_open(self,*args):
-        # # print("try whisperai!") if len(root.ids['fc'].selection) > 0 else
-        # # #show a popup: nothing selected
         popup = Popup(title='Something went wrong.', 
                 content=
                     Label(
