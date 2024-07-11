@@ -95,7 +95,6 @@ class CustomBoxLayout(BoxLayout):
 
 class whApp(App):
     def build(self):
-        self.title = 'Kivy Whisper'
         return Builder.load_string(kv_string)
 
 if __name__ == '__main__':
