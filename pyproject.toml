@@ -9,6 +9,7 @@ readme = "README.md"
 python = "3.10.9"
 Kivy = "^2.3.0"
 #https://github.com/openai/whisper/discussions/683#discussioncomment-9303113
+#openai-whisper = { git = "https://github.com/openai/whisper.git", rev = "v20231117" }
 openai-whisper = { git = "https://github.com/openai/whisper.git", rev = "v20231117" }
 #manually add numpy
 numpy = "<2.0.0"
