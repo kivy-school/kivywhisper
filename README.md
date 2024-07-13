@@ -8,7 +8,7 @@ kivyschool link: https://kivyschool.com/blog/2024/07/12/kivywhisper1/
 
 ## Why use it? 
 
-The initial motivation for this repo is to have a GUI to manipulate Whisper. This is so that I can generate initial video to text files to put up transcripts on the kivyschool.com website. One good thing about this initial integration is that I can then switch models, make the GUI better, or even run this when I have no access to a terminal/cmd/powershell. Having complete control is really nice and being able to use Kivy to rapidly prototype a GUI is invaluable (this was built in 3 days discounting all the time I spent documenting it, total time was 6 days).
+The initial motivation for this repo is to have a GUI to manipulate Whisper. This is so that I can generate initial video to text files to put up transcripts on the kivyschool.com website. One good thing about this initial integration is that I can then switch models, make the GUI better, or even run this when I have no access to a terminal/cmd/powershell. Having complete control is really nice and being able to use Kivy to rapidly prototype a GUI is invaluable (this was built in 2 days discounting all the time I spent documenting it, total time was 6 days). Later on I still need to integrate multiprocessing to push blocking code onto a Python subprocess.
 
 ## What can you learn from this repo?
 
