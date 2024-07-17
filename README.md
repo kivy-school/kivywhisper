@@ -30,3 +30,7 @@ In this repo and associated youtube playlist, you will learn:
 PREREQUISITE SETUP:
 
 [![Watch the video](https://img.youtube.com/vi/qiIFJIqMHV0/maxresdefault.jpg)](https://www.youtube.com/embed/qiIFJIqMHV0)
+
+## Rest of the playlist:
+
+[![Watch the video](https://img.youtube.com/vi/vM4xBhjxF2E/maxresdefault.jpg)](https://www.youtube.com/embed/vM4xBhjxF2E)
