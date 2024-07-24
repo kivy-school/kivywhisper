@@ -10,7 +10,7 @@ from kivy.uix.label import Label
 import whisper
 import pathlib
 
-kv_string = '''
+kv_string = Builder.load_string('''
 #:import psutil psutil
 #:import pathlib pathlib
 <CustomBoxLayout@BoxLayout>:
@@ -56,7 +56,7 @@ kv_string = '''
         FileChooserIconLayout
 
 CustomBoxLayout:
-'''
+''')
 
 class CustomBoxLayout(BoxLayout):
     def transcribe(self, *args):
@@ -96,7 +96,7 @@ class CustomBoxLayout(BoxLayout):
 class whApp(App):
     def build(self):
         self.title = 'Kivy Whisper'
-        return Builder.load_string(kv_string)
+        return kv_string
 
 if __name__ == '__main__':
     #this is to make the Kivy window always on top
