@@ -2,10 +2,15 @@
 ## What is this?
 This is a Kivy GUI for OpenAI's Whisper speech to text. Tested on Windows, but should work on Linux and Mac when packaged with PyInstaller. 
 
-kivyschool link: https://kivyschool.com/blog/2024/07/12/kivy-whisper-part-1/
-https://kivyschool.com/blog/#creating-a-cross-platform-gui-for-openais-whisper-part-2
-https://kivyschool.com/blog/#creating-a-cross-platform-gui-for-openais-whisper-part-3
-https://kivyschool.com/blog/#creating-a-cross-platform-gui-for-openais-whisper-part-4
+kivyschool link: 
+
+https://kivyschool.com/blog/2024/07/12/kivy-whisper-part-1/
+
+https://kivyschool.com/blog/2024/07/17/kivy-whisper-part-2/
+
+https://kivyschool.com/blog/2024/07/19/kivy-whisper-part-3/
+
+https://kivyschool.com/blog/2024/07/24/kivy-whisper-part-4/
 
 [![Watch the video](https://img.youtube.com/vi/2j4oQeDFVrs/maxresdefault.jpg)](https://www.youtube.com/embed/2j4oQeDFVrs)
 
