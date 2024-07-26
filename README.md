@@ -2,15 +2,9 @@
 ## What is this?
 This is a Kivy GUI for OpenAI's Whisper speech to text. Tested on Windows, but should work on Linux and Mac when packaged with PyInstaller. 
 
-kivyschool link: 
+kivyschool links: 
 
 https://kivyschool.com/blog/2024/07/12/kivy-whisper-part-1/
-
-https://kivyschool.com/blog/2024/07/17/kivy-whisper-part-2/
-
-https://kivyschool.com/blog/2024/07/19/kivy-whisper-part-3/
-
-https://kivyschool.com/blog/2024/07/24/kivy-whisper-part-4/
 
 [![Watch the video](https://img.youtube.com/vi/2j4oQeDFVrs/maxresdefault.jpg)](https://www.youtube.com/embed/2j4oQeDFVrs)
 
@@ -41,8 +35,18 @@ PREREQUISITE SETUP:
 
 ## Rest of the playlist:
 
+https://kivyschool.com/blog/2024/07/17/kivy-whisper-part-2/
+
+https://kivyschool.com/blog/2024/07/19/kivy-whisper-part-3/
+
+https://kivyschool.com/blog/2024/07/24/kivy-whisper-part-4/
+
+https://kivyschool.com/blog/2024/07/26/kivy-whisper-part-5/
+
 [![Watch the video](https://img.youtube.com/vi/vM4xBhjxF2E/maxresdefault.jpg)](https://www.youtube.com/embed/vM4xBhjxF2E)
 
 [![Watch the video](https://img.youtube.com/vi/pMO68_QHHGo/maxresdefault.jpg)](https://www.youtube.com/embed/pMO68_QHHGo)
 
 [![Watch the video](https://img.youtube.com/vi/9Z-8RYmOIns/maxresdefault.jpg)](https://www.youtube.com/embed/9Z-8RYmOIns)
+
+[![Watch the video](https://img.youtube.com/vi/E5e3TIpz2zU/maxresdefault.jpg)](https://www.youtube.com/embed/E5e3TIpz2zU)
